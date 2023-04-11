@@ -168,7 +168,7 @@ weatherStation.updateWeather({ city: 'Surabaya', temperature: 32 });
  * -kalau modified berarti code yang sudah di commit di ubah/berubah
  * 3. git add untuk menambahkan file-file yang telah di ubah tersebut ke dalam staging area
  * 4. git commit -m "pesan commit" untuk melakukan commit pada file-file yang telah di ubah
- * 5. git push origin <branch> jika ingin masuk remote repository github.com
+ * 5. git push origin <nama_branch> jika ingin masuk remote repository github.com
  */
 
 /**
