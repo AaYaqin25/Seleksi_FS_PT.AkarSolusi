@@ -33,5 +33,5 @@ INNER JOIN kota ON kota.id = kegiatan.kota_id
 
 --b
 SELECT kode AS "Kode Kegiatan", nama AS "Nama Kegiatan", 
-    IF(CURDATE() BETWEEN tanggal_mulai AND tanggal_akhir, 'Active', 'Inactive') AS "Status" 
+  IF(CURDATE() BETWEEN tanggal_mulai AND tanggal_akhir, 'Active', 'Inactive') AS "Status" 
 FROM kegiatan
