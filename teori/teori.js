@@ -49,7 +49,7 @@ console.log(instanceA === instanceB);
 
 // implementasi pola desain Observer di javascript
 
-// Subject
+// Subject 
 class WeatherStation {
     constructor() {
         this.observers = [];
