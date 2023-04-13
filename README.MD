@@ -1,4 +1,4 @@
-# Cara menggunakan aplikasi nya #
+# Cara menggunakan aplikasi nya frontend #
 
 1. tampilan awal akan menampilkan seluruh data user yang ada di table dari database
 2. klik tombol "Tambah User" dan akan pindah halaman ke /FromAdd dan muncul form nya
@@ -25,3 +25,10 @@
 23. dan data yang tadi akan langsung masuk ke table halaman utama dan ke database
 24. dan di bagian action nya yang tadi nya tombol resend
 25. akan berubah menjadi tombol edit dan delete
+
+# Untuk aplikasi backend nya #
+
+1. ada fitur CRUD di router nya
+2. ada pengecekan dan validasi di dalamnya
+3. menggunakan sequelize postgreSQL
+4. ada unit testing menggukanan mocha chai
