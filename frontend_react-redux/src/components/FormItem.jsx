@@ -1,4 +1,4 @@
-import React, { Fragment, useCallback, useState, useRef, useEffect } from "react";
+import React, { Fragment, useCallback, useState, useRef, useLayoutEffect } from "react";
 import ModalDelete from "./ModalDelete";
 
 export default function FormItem({ no, firstName, lastName, email, sent, update, remove, resend }) {
@@ -11,9 +11,11 @@ export default function FormItem({ no, firstName, lastName, email, sent, update,
     const [edit, setEdit] = useState(false);
     const [modal, setModal] = useState(false)
 
-    useEffect(() => {
-        scrollRef.current.scrollIntoView({ behaivor: 'smooth' })
-    }, [user])
+    useLayoutEffect(() => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [user]);
 
     const handleSubmitUpdate = useCallback(() => {
         update(user.firstName, user.lastName)
