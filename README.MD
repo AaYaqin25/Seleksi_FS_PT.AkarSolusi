@@ -1,4 +1,4 @@
-# Cara menggunakan aplikasi nya frontend #
+# Cara menggunakan aplikasi frontend #
 
 1. tampilan awal akan menampilkan seluruh data user yang ada di table dari database
 2. klik tombol "Tambah User" dan akan pindah halaman ke /FromAdd dan muncul form nya
@@ -26,7 +26,7 @@
 24. dan di bagian action nya yang tadi nya tombol resend
 25. akan berubah menjadi tombol edit dan delete
 
-# Untuk aplikasi backend nya #
+# Untuk aplikasi backend #
 
 1. ada fitur CRUD di router nya
 2. ada pengecekan dan validasi di dalamnya
