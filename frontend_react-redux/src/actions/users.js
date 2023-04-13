@@ -68,7 +68,6 @@ export const addUser = (firstName, lastName, email) => {
     }
 }
 
-
 export const removeUserSuccess = (id) => ({
     type: 'REMOVE_USER_SUCCESS',
     id
@@ -79,7 +78,6 @@ export const removeUserFailure = (err) => ({
     type: 'REMOVE_USER_FAILURE',
     err
 })
-
 
 export const removeUser = (id) => {
     return async (dispatch, getState) => {
@@ -114,7 +112,6 @@ export const updateUser = (id, firstName, lastName) => {
     return async (dispatch, getState) => {
         try {
             const { data } = await request.put(`users/${id}`, { firstName, lastName })
-            console.log(data.data, 'ini pas update');
             if (data.success) {
                 dispatch(updateUserSuccess(id, data.data))
             } else {
@@ -143,7 +140,6 @@ export const resendUser = (id, firstName, lastName, email) => {
     return async (dispatch, getState) => {
         try {
             const { data } = await request.post('users', { firstName, lastName, email })
-            console.log(data.data ,'ini data');
             if (data.success) {
                 dispatch(resendUserSuccess(id, data.data))
             } else {
